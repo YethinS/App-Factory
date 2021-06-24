@@ -1,0 +1,14 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.todo{
+    width: 50%;
+    height: 50vh;
+    background-color: red;
+    margin-left: 22rem;
+    margin-top: 15rem;
+    border-radius: 5px;
+    padding: 25px;
+}

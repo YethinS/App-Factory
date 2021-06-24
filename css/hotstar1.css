@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+    
+}
+.nav-list{
+    background-color: #121926;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+.btn-primary{
+    text-transform: uppercase;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+.nav-item img{
+    height: 9vh;
+}
+.nav-item input{
+    height: 6vh;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}
+::placeholder{
+    color: honeydew;
+    font-size: 16px;
+}
+i{
+    color: honeydew;
+}
+.disney{
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+small{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/icon-generator.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Android Asset Studio(Curv)</title>
+</head>
+<body>
+  <header class="top">
+        
+            <h3>App <span>Icon</span> Gen</h3>
+            
+  </header>
+  <div class="main-container">
+    <div class="left-section">
+      
+      <div class="left-inside">
+        <p>Foreground</p>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+          <button type="button" class="btn" id="btn-take">Image</button>
+          <button type="button" class="btn btn1 active" id="btn-ask" data-section="section-1">Clipart</button>
+          <button type="button" class="btn btn1" id="btn-trade" data-section="section-2">Text</button>
+        </div>
+    <!--First Container-->    
+        <div class="button1-content" id="section-1">
+        <!--Icon Box start-->
+        <div class="icon-box">
+
+          <div class="search">
+            <i class="fas fa-search"></i>
+            <input type="textbox" placeholder="find a clipart">
+          </div>
+          <!--Table start-->
+          <div class="table-container">
+          <table class="table table-borderless ">
+            
+            <tbody>
+              <tr>
+                
+                <td ><i class="fab fa-accessible-icon active" onclick="myFunction(this);" id="icon-1" ></i></td>
+                <td><i class="fas fa-smile" onclick="myFunction(this);" id="icon-3"></i></td>
+                <td><i class="fas fa-clock" onclick="myFunction(this);" id="icon-4"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+              </tr>
+              <tr>
+               
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+              </tr>
+              <tr>
+               
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+              </tr>
+              <tr>
+               
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+              </tr>
+              <tr>
+               
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+              </tr>
+              <tr>
+               
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+                <td><i class="fab fa-accessible-icon"></i></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        </div>
+        <!--Icon box End-->
+        <!--Seond button group start-->
+        <div class="second-btn-grp">
+            <p>Trim Whitespace</p>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+              <button type="button" class="btn active" id="btn-trim">Trim</button>
+              <button type="button" class="btn" id="btn-dtrim">Don't trim</button>
+            </div>
+        </div>
+        <!--Second button group End-->
+        <div class="padding">
+          <p>Padding</p>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+
+        </div>
+        <div class="color-container">
+          <p>Color</p>
+          <small > Set transparent to use original color</small><br>
+          <input type="color" id="favcolor" name="favcolor" value="#ffffff">
+          
+        </div>
+        <div class="background-container">
+          <p>Background color</p>
+          <input type="color" id="favcolor" name="favcolor" value="#448aff">
+        </div>
+        <div class="scaling">
+          <p>Scaling</p>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+            <button type="button" class="btn active" id="btn-crop">Crop</button>
+            <button type="button" class="btn" id="btn-center">Center</button>
+          </div>
+        </div>
+        <div class="shape">
+          <p>Shape</p>
+          <small >Web version will always be square</small><br>
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              shapes
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Square</a>
+              <a class="dropdown-item" href="#">Circle</a>
+              <a class="dropdown-item" href="#">Tall rect</a>
+              <a class="dropdown-item" href="#">Wide rect</a>
+              <a class="dropdown-item" href="#">None</a>
+            </div>
+          </div>
+        </div>
+        <div class="effect">
+          <p>Effect</p>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+            <button type="button" class="btn active" id="btn-none">None</button>
+            <button type="button" class="btn" id="btn-elevate">Elevate</button>
+            <button type="button" class="btn" id="btn-cast">Cast Shadow</button>
+            <button type="button" class="btn" id="btn-score">Score</button>
+          </div>
+        </div>
+        <div class="name">
+          <p>Name</p>
+          <input type="text" value="ic_launcher">
+        </div>
+       </div>
+    <!--End of First container-->   
+      </div> 
+      <div class="button1-content" id="section-2">
+        <div class="text">
+          <p>Text</p>
+          <input type="text">
+        </div>
+       <!--</div>-->
+      <div class="font">
+        <p>Font</p>
+        <small>From forms.google.com</small>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Font Style
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div> 
+      <div class="white-space">
+        <p>Trim Whitespace</p>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+          <button type="button" class="btn active" id="btn-none">None</button>
+          <button type="button" class="btn" id="btn-elevate">Elevate</button>
+         
+        </div>
+      </div>
+      <div class="padding">
+        <p>Padding</p>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+
+      </div>
+      <div class="color-container">
+        <p>Color</p>
+        <small> Set transparent to use original color</small><br>
+        <input type="color" id="favcolor" name="favcolor" value="#ffffff">
+        
+      </div>
+      <div class="background-container">
+        <p>Background color</p>
+        <input type="color" id="favcolor" name="favcolor" value="#448aff">
+      </div>
+      <div class="scaling">
+        <p>Scaling</p>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+          <button type="button" class="btn active" id="btn-crop">Crop</button>
+          <button type="button" class="btn" id="btn-center">Center</button>
+        </div>
+      </div>
+      <div class="shape">
+        <p>Shape</p>
+        <small >Web version will always be square</small><br>
+        <div class="dropdown">
+          <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            shapes
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Square</a>
+            <a class="dropdown-item" href="#">Circle</a>
+            <a class="dropdown-item" href="#">Tall rect</a>
+            <a class="dropdown-item" href="#">Wide rect</a>
+            <a class="dropdown-item" href="#">None</a>
+          </div>
+        </div>
+      </div>
+      <div class="effect">
+        <p>Effect</p>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+          <button type="button" class="btn active" id="btn-none">None</button>
+          <button type="button" class="btn" id="btn-elevate">Elevate</button>
+          <button type="button" class="btn" id="btn-cast">Cast Shadow</button>
+          <button type="button" class="btn" id="btn-score">Score</button>
+        </div>
+      </div>
+      <div class="name">
+        <p>Name</p>
+        <input type="text" value="ic_launcher">
+      </div>
+      
+
+    </div>
+    <!--End of second container --> 
+    </div>
+    <div class="right-section">
+        <div class="image">
+          <div class="box">
+            <!--<img class="outputs-image" data-id="out-icon-xxxhdpi" src="data:image/png;base64,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">-->
+            <i class="fab fa-accessible-icon" id="icon-2"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/icon-generator.js"></script>
+
+</body>
+</html>
